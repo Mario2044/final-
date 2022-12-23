@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+body {
+  font-family: "Montserrat", "sans-serif";
+}
+
+.main {
+  height: 2266px;
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  border-radius: 0px 0px 12px 12px;
+}
+.main .content {
+  height: 100%;
+  background: url("../images/h.svg") center top no-repeat;
+}
+.main__header {
+  display: flex;
+  justify-content: space-between;
+}
+.main__logo {
+  display: flex;
+  width: 108px;
+  height: 50px;
+  margin-top: 50px;
+}
+.main__logo img {
+  max-width: 100%;
+  height: auto;
+}
+.main__menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.main__info-menu {
+  display: flex;
+  height: 25px;
+  margin-bottom: 6px;
+}
+.main__language-switcher, .main__address, .main__cell {
+  align-items: center;
+  margin-right: 6px;
+}
+.main__language-switcher:after, .main__address:after, .main__cell:after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #E6E6F0;
+  margin-left: 6px;
+}
+.main__language-switcher {
+  display: flex;
+}
+.main__language-switcher a {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 1px;
+  color: white;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 7px;
+  border-radius: 8px;
+  transition-property: background;
+  transition-duration: 0.2s;
+}
+.main__language-switcher a.active {
+  background: #F0145A;
+  cursor: default;
+  pointer-events: none;
+}
+.main__language-switcher a:hover:not(.active) {
+  background: grey;
+}
+.main__address {
+  display: flex;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: white;
+}
+.main__cell {
+  display: flex;
+}
+.main__cell a {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: white;
+  text-decoration: none;
+}
+.main__fb {
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+.main__main-menu {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+.main__main-menu a {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+.main__title h1 {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 46px;
+  color: white;
+  margin: 366px auto 0;
+}
+.main__title button {
+  display: none;
+}
+
+@media (max-width: 1320px) {
+  .content {
+    background: gold;
+  }
+}
+@media (max-width: 335px) {
+  .content {
+    width: 315px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
