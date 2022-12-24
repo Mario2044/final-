@@ -10,7 +10,8 @@
 
 .content {
   margin: 0 auto;
-  max-width: 1600px;
+  max-width: 1920px;
+  padding: 0 160px;
 }
 
 body {
@@ -21,6 +22,7 @@ body {
   height: 2266px;
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   border-radius: 0px 0px 12px 12px;
+  box-shadow: 0px 30px 0px -20px #CACADB, 0px 60px 0px -40px #E7E7F2;
 }
 .main .content {
   height: 100%;
@@ -37,7 +39,7 @@ body {
   margin-top: 50px;
 }
 .main__logo img {
-  max-width: 100%;
+  max-width: 130px;
   height: auto;
 }
 .main__menu {
@@ -134,10 +136,226 @@ body {
 .main__title button {
   display: none;
 }
+.main__title-button {
+  display: flex;
+  justify-content: center;
+}
+.main__button {
+  width: 42px;
+  height: 42px;
+  border-radius: 100%;
+  margin-top: 403px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #323264;
+  border: 2px solid #ffffff;
+  writing-mode: vertical-rl;
+  cursor: pointer;
+}
+.main__button a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.main__button p {
+  font-size: 46px;
+  padding-top: 4px;
+  padding-left: 9px;
+}
+.main__inscription {
+  margin-top: 90px;
+}
+.main__inscription-block {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 60px;
+}
+.main__inscription-wrap-tab {
+  border-right: 4px solid rgba(255, 255, 255, 0.3019607843);
+  width: calc(37% - 60px);
+  padding-right: 60px;
+  height: 303px;
+}
+.main__inscription-wrap-txt {
+  width: calc(63% - 60px);
+  padding-left: 60px;
+  align-self: center;
+}
+.main__inscription-wrap-txt h3 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 37px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.main__inscription-wrap-txt p {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
+.main__inscription-item-red {
+  background-image: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: 0em;
+  text-align: right;
+  margin-bottom: 30px;
+  cursor: default;
+  margin-top: 13px;
+}
+.main__inscription-item {
+  color: #B3B3BA;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: 0em;
+  text-align: right;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.main__services {
+  margin-bottom: 10px;
+}
+.main__services-button {
+  text-decoration: none;
+}
+.main__services-button p {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 1px;
+  color: #24A3FF;
+}
+.main__wraps-title {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: 0em;
+  text-align: left;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 60px;
+}
+.main__wraps {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main__wrap-item {
+  width: calc((100% - 60px) / 3);
+  margin-bottom: 60px;
+}
+.main__wrap-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.main__wrap-item a {
+  text-decoration: none;
+}
+.main__wrap-item img {
+  margin-bottom: 30px;
+}
+.main__wrap-item h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  color: #24A3FF;
+}
+.main__wrap-item p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+}
 
-@media (max-width: 1320px) {
+.main__inscription-item:hover {
+  color: #F0145A;
+}
+.main__button:hover {
+  border: 2px solid #F0145A;
+}
+.main__button a:hover {
+  color: #F0145A;
+}
+.main__services-button {
+  display: inline-block;
+}
+.main__services-button p:hover {
+  color: #F0145A;
+}
+.main__wrap-title:hover {
+  color: #F0145A;
+}
+
+@media (max-width: 1440px) {
   .content {
     background: gold;
+  }
+}
+@media (max-width: 648px) {
+  .main__inscription {
+    margin-top: 537px;
+  }
+  .main__inscription-block {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__inscription-wrap-tab {
+    display: flex;
+    border-right: none;
+    border-bottom: 2px solid red;
+    width: 100%;
+    padding-right: 0;
+    overflow: scroll;
+  }
+  .main__inscription-wrap-tab::-webkit-scrollbar {
+    display: none;
+  }
+  .main__inscription-item {
+    text-align: left;
+    margin-bottom: 0;
+    white-space: nowrap;
+  }
+  .main__inscription-item:not(:last-child) {
+    margin-right: 20px;
+  }
+  .main__inscription-item-red {
+    text-align: left;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-right: 20px;
+  }
+  .main__inscription-wrap-txt {
+    width: 100%;
+    padding-left: 60px;
+    align-self: center;
+  }
+  .main__inscription-wrap-txt h3 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+  .main__inscription-wrap-txt p {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffffff;
   }
 }
 @media (max-width: 335px) {

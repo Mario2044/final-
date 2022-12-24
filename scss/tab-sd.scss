@@ -1,5 +1,69 @@
 @media (max-width: $tab-sd) {
-    .content {
-        // background: greenyellow;
+    .main {
+        &__inscription {
+            margin-top: 537px;
+        }
+
+        &__inscription-block {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__inscription-wrap-tab {
+            display: flex;
+            border: {
+                right: none;
+                bottom: 2px solid red;
+            }
+            width: 100%;
+            padding-right: 0;
+            overflow: scroll;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        &__inscription-item {
+            text-align: left;
+            margin-bottom: 0;
+            white-space: nowrap;
+
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+
+        &__inscription-item-red {
+            text-align: left;
+            margin-bottom: 0;
+            margin-top: 0;
+            margin-right: 20px;
+        }
+
+        &__inscription-wrap-txt {
+            width: 100%;
+            padding-left: 60px;
+            align-self: center;
+
+            h3 {
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 37px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #ffffff;
+                margin-bottom: 0;
+            }
+
+            p {
+                font-size: 19px;
+                font-weight: 400;
+                line-height: 30px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #ffffff;
+            }
+        }
     }
 }
