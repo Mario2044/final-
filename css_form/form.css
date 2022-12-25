@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #323264;
+}
+
+.wrap {
+  width: 100%;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 1440px;
+  height: 1089px;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  width: 650px;
+  height: 615px;
+  background-color: #F5F5FA;
+  padding: 30px;
+}
+.form__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form input {
+  width: 590px;
+  height: 56px;
+  border-radius: 12px;
+  border: none;
+}
+.form h3 {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: 0em;
+  text-align: left;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
+}
+.form textarea {
+  width: 590px;
+  height: 130px;
+  border: none;
+}
+.form__name {
+  margin-bottom: 15px;
+}
+.form__message {
+  margin-bottom: 30px;
+}
+.form__question {
+  margin-bottom: 15px;
+}
+.form__question p {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 1px;
+  color: #B3B3BA;
+}
+.form__number {
+  margin-bottom: 15px;
+}
+.form__email {
+  margin-bottom: 30px;
+}
+.form__button input {
+  background: #24A3FF;
+}
+
+/*# sourceMappingURL=form.css.map */
