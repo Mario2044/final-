@@ -1,6 +1,9 @@
 .main {   
     &__main-menu-item a {
+        transition: all 1s;
+
         &:hover {
+            transition: all 0.3s;
             color: #F0145A;
             border-bottom: 2px solid #F0145A;
         }
@@ -8,19 +11,27 @@
     }
 
     &__inscription-item {
-        
+        transition: all 1s;
+
         &:hover {
+            transition: all 0.3s;
             color: #F0145A;
         }
     }
 
     &__button { 
+        transition: all 1s;
+
         &:hover {
+            transition: all 0.3s;
             border: 2px solid #F0145A;
         }
 
         a {
+            transition: all 1s;
+
             &:hover {
+                transition: all 0.3s;
                 color: #F0145A;
             }
         }
@@ -30,14 +41,20 @@
         display: inline-block;
         
         p {
+            transition: all 1s;
+
             &:hover {
+                transition: all 0.3s;
                 color: #F0145A;
             }
         }
     }
 
     &__wrap-title {
+        transition: all 1s;
+
         &:hover {
+            transition: all 0.3s;
             color: #F0145A;
         }
     }
@@ -45,7 +62,10 @@
 
 .team {
     &__button {
+        transition: all 1s; 
+
         &:hover p {
+            transition: all 0.3s;
             color: #F0145A;
         }
     }
@@ -53,15 +73,32 @@
 
 .wraps {
     &__publications-button {
+        transition: all 1s;
+
         &:hover {
+            transition: all 0.3s;
             color: #F0145A;
         }
     }
 
     &__title {
+        transition: all 1s;
+
         &:hover {
+            transition: all 0.3s;
             color: #F0145A;
         }
+    }
+}
+
+.contact {
+    &__email {
+        transition: all 0.2s;
+    }
+
+    &__email:hover {
+        color: #F0145A;
+        transition: all 0.2s;
     }
 }
 

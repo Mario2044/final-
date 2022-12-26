@@ -657,38 +657,82 @@ body {
   top: 30px;
 }
 
+.main__main-menu-item a {
+  transition: all 1s;
+}
 .main__main-menu-item a:hover {
+  transition: all 0.3s;
   color: #F0145A;
   border-bottom: 2px solid #F0145A;
 }
+.main__inscription-item {
+  transition: all 1s;
+}
 .main__inscription-item:hover {
+  transition: all 0.3s;
   color: #F0145A;
 }
+.main__button {
+  transition: all 1s;
+}
 .main__button:hover {
+  transition: all 0.3s;
   border: 2px solid #F0145A;
 }
+.main__button a {
+  transition: all 1s;
+}
 .main__button a:hover {
+  transition: all 0.3s;
   color: #F0145A;
 }
 .main__services-button {
   display: inline-block;
 }
+.main__services-button p {
+  transition: all 1s;
+}
 .main__services-button p:hover {
+  transition: all 0.3s;
   color: #F0145A;
+}
+.main__wrap-title {
+  transition: all 1s;
 }
 .main__wrap-title:hover {
+  transition: all 0.3s;
   color: #F0145A;
 }
 
+.team__button {
+  transition: all 1s;
+}
 .team__button:hover p {
+  transition: all 0.3s;
   color: #F0145A;
 }
 
+.wraps__publications-button {
+  transition: all 1s;
+}
 .wraps__publications-button:hover {
+  transition: all 0.3s;
   color: #F0145A;
+}
+.wraps__title {
+  transition: all 1s;
 }
 .wraps__title:hover {
+  transition: all 0.3s;
   color: #F0145A;
+}
+
+.contact__email {
+  transition: all 0.2s;
+}
+.contact__email:hover {
+  color: #F0145A;
+  transition: all 0.2s;
 }
 
 /* size text */
