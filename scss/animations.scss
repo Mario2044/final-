@@ -1,4 +1,12 @@
 .main {   
+    &__main-menu-item a {
+        &:hover {
+            color: #F0145A;
+            border-bottom: 2px solid #F0145A;
+        }
+
+    }
+
     &__inscription-item {
         
         &:hover {
@@ -34,3 +42,26 @@
         }
     }
 }
+
+.team {
+    &__button {
+        &:hover p {
+            color: #F0145A;
+        }
+    }
+}
+
+.wraps {
+    &__publications-button {
+        &:hover {
+            color: #F0145A;
+        }
+    }
+
+    &__title {
+        &:hover {
+            color: #F0145A;
+        }
+    }
+}
+

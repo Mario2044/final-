@@ -1,0 +1,39 @@
+@import 'breakpoints';
+@media (max-width: $iphone) {
+    .form {
+        width: 375px;
+        height: 650px;
+
+        input {
+            width: 315px;
+            height: 56px;
+            border-radius: 12px;
+            border: none;
+
+            &:not(:last-child) {
+                padding-left: 15px;
+            }
+        }
+
+        &__message {
+            margin-bottom: 30px;
+    
+            textarea {
+                width: 315px;
+                height: 130px;
+                border: none;
+            }
+        }
+
+        h3 {
+            font-size: 30px;
+        }
+
+        &__button-send {
+            input {
+                padding: 0;
+            }
+        }
+    }
+}
+    

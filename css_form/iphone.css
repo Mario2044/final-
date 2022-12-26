@@ -1,0 +1,31 @@
+@media (max-width: 650px) {
+  .form {
+    width: 375px;
+    height: 650px;
+  }
+  .form input {
+    width: 315px;
+    height: 56px;
+    border-radius: 12px;
+    border: none;
+  }
+  .form input:not(:last-child) {
+    padding-left: 15px;
+  }
+  .form__message {
+    margin-bottom: 30px;
+  }
+  .form__message textarea {
+    width: 315px;
+    height: 130px;
+    border: none;
+  }
+  .form h3 {
+    font-size: 30px;
+  }
+  .form__button-send input {
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=iphone.css.map */

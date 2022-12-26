@@ -1,7 +1,58 @@
+@import 'size';
+@import 'colors.scss';
+@import 'breakpoints.scss';
 @media (max-width: $tab-sd) {
+
+    .content {
+        padding: 0 60px;
+    }
+
+    .wrapper {
+        &:nth-child(4) {
+            padding-bottom: 30px;
+        }
+    }
+
     .main {
+        &__menu {
+            display: flex;
+            flex-flow: column wrap;
+        }
+
+        &__button {
+            margin-top: 369px;
+        }
+    
+        &__logo {
+            display: flex;
+            margin-top: 30px;
+            order: 2;
+            margin-right: auto;
+            margin: 0;
+            position: relative;
+            top: 34px;
+        }
+
+        &__info-menu {
+            display: flex;
+            margin-bottom: 16px;
+            margin: 0;
+            order: 1;
+            position: relative;
+            top: 50px;
+        }
+
+        &__main-menu {
+            display: flex;
+            height: 50px;
+            order: 3;
+            margin-right: auto;
+            position: relative;
+            top: 88px;
+        }
+
         &__inscription {
-            margin-top: 537px;
+            margin-top: 100px;
         }
 
         &__inscription-block {
@@ -13,11 +64,14 @@
             display: flex;
             border: {
                 right: none;
-                bottom: 2px solid red;
+                bottom: 4px solid #FFFFFF4D;
             }
             width: 100%;
             padding-right: 0;
             overflow: scroll;
+            height: auto;
+            padding-bottom: 60px;
+            margin-bottom: 60px;
 
             &::-webkit-scrollbar {
                 display: none;
@@ -52,8 +106,8 @@
                 line-height: 37px;
                 letter-spacing: 0em;
                 text-align: left;
-                color: #ffffff;
-                margin-bottom: 0;
+                color: $color3;
+                margin-bottom: 30px;
             }
 
             p {
@@ -62,8 +116,87 @@
                 line-height: 30px;
                 letter-spacing: 0em;
                 text-align: left;
-                color: #ffffff;
+                color: $color3;
             }
+        }
+
+
+        &__wrap-item {
+            width: calc((100% - 30px) / 2);
+
+            &:nth-child(2n) {
+                margin-left: 30px;
+            }
+
+            &:not(:nth-child(3n)) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .contact {
+        &__info {
+            margin-left: auto;
+        }
+
+        &__info-box {
+            width: unset;
+        }
+    }
+
+    .card {
+        &__brand-hillel {
+            border-radius: 0;
+        }
+
+        &__brand-3d {
+            border-radius: 0;
+        }
+
+        &__brand-infa {
+            border-radius: 0;
+        }
+
+        &__brand-ultimate {
+            border-radius: 0;
+        }
+    }
+
+    .team {
+        &__wrap {
+            display: flex;
+            margin-bottom: 30px;
+            flex-direction: column;
+
+            img {
+                border-radius: 12px 12px 0 0;
+            }
+        }
+    }
+
+    .wraps {  
+        justify-content: space-between;  
+
+        &__wrap {
+            width: calc((100% - 30px) / 2);
+
+            &:not(:nth-child(3n)) {
+                margin-right: 0;
+            }
+        }
+
+        &__width {
+            width: 100%;
+        }
+    }
+
+    .contact {
+        &__information{
+            white-space: nowrap;
+        }
+
+        &__foot-company {
+            white-space: nowrap;
         }
     }
 }

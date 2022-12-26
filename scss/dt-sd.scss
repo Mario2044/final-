@@ -1,5 +1,167 @@
+@import 'size';
+@import 'colors.scss';
+@import 'breakpoints.scss';
 @media (max-width: $dt-sd) {
     .content {
-        background: gold;
+        padding: 0 60px;
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+
+        &__wrap {
+            width: 25%;
+        }
+        
+        &__brand-hillel {
+            border-radius: 0;
+            padding: 36px 72px 36px 71px;
+            
+            img {
+                width: 100%;
+            }
+        }
+    
+        &__brand-biz {
+            padding: 44px 81px 44px 80px;
+    
+            img {
+                width: 100%;
+            }
+        }
+    
+        &__brand-tapgerine {
+            padding: 38px 91px 38px 90px;
+
+            img {
+                width: 100%;
+            }
+        }
+    
+        &__brand-3d {
+            border-radius: 0;
+            padding: 39px 90px 39px 90px;
+    
+            img {
+                width: 100%;
+            }
+        }
+    
+        &__brand-oranger {
+            padding: 38px 93px 38px 93px;
+    
+            img {
+                width: 100%;
+            }
+        }
+    
+        &__brand-adtelligent {
+            padding: 36px 86px 36px 87px;
+    
+            img {
+                width: 100%;
+            }
+        }
+    
+        &__brand-clickky {
+            padding: 29px 111px 30px 111px;
+    
+            img {
+                width: 100%;
+            }
+        }
+    
+        &__brand-eco {
+            padding: 22px 107px 22px 107px;
+    
+            img {
+                width: 100%;
+            }
+        }
+    
+        &__brand-infa {
+            border-radius: 0;
+            padding: 30px 89px 30px 89px;
+    
+            img {
+                width: 100%;
+            }
+        }
+    
+        &__brand-sity {
+            padding: 41px 90px 41px 89px;
+    
+            img {
+                width: 100%;
+            }
+        }
+    
+        &__brand-art {
+            padding: 37px 85px 37px 85px;
+    
+            img {
+                width: 100%;
+            }
+        }
+    
+        &__brand-ultimate {
+            padding: 13px 104px 12px 104px;
+            border-radius: 0;
+    
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .main {
+        &__logo {
+            display: flex;
+            width: 108px;
+            height: 50px;
+            order: 1;
+            position: relative;
+            top: 25px;
+        }
+    
+        &__menu {
+            display: flex;
+            flex-flow: column wrap;
+        }
+
+        &__main-menu {
+            display: flex;
+            list-style: none;
+            justify-content: flex-end;
+            order: 3;
+        }
+    
+    
+        &__info-menu {
+            display: flex;
+            height: 25px;
+            margin-bottom: 16px;
+            order: 2;
+            margin-left: auto;
+        }
+
+        &__main-menu-item {
+            &:not(:first-child) {
+                margin-left: 15px;
+            }
+
+            a {
+                margin: 0;
+            }
+        }
+
+        &__info-menu {
+            display: flex;
+            height: 25px;
+            margin-bottom: 16px;
+            order: 1;
+        }
+
     }
 }
