@@ -4,6 +4,23 @@
 @media (max-width: $mobile) {
     
     .main {
+        &::after {
+            left: 3%;
+            width: 94%;
+        }
+    
+        &::before {
+            content: '';
+            overflow: visible;
+            position: absolute;
+            top: 100%;
+            left: 6%;
+            width: 88%;
+            height: 20px;
+            background-color: $color11;
+            border-radius: 0px 0px 12px 12px;
+        }
+
         .content {
             padding: 0;
             background-size: auto;

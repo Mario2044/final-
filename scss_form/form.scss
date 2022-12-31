@@ -22,6 +22,7 @@ body {
         letter-spacing: 0em;
         text-align: left;
         padding-left: 15px;
+        padding-right: 15px;
     }
 
     textarea {
@@ -135,6 +136,9 @@ body {
     &__number {
         margin-bottom: 15px;
 
+        input::-webkit-inner-spin-button { 
+            display: none;
+        }
 
         input::placeholder {
             color: $color1;

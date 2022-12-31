@@ -32,9 +32,34 @@ body {
 }
 
 .main {
+    position: relative;
+    overflow: visible;
     background: linear-gradient(228.57deg, $color8 11.93%, $color8 57.17%, #643E72 87.46%);
     border-radius: 0px 0px 12px 12px;
-    box-shadow: 0px 30px 0px -20px $color10, 0px 60px 0px -40px $color11;
+
+    &::after {
+        content: '';
+        overflow: visible;
+        position: absolute;
+        top: 100%;
+        left: 1%;
+        width: 98%;
+        height: 10px;
+        background-color: $color10;
+        border-radius: 0px 0px 12px 12px;
+    }
+
+    &::before {
+        content: '';
+        overflow: visible;
+        position: absolute;
+        top: 100%;
+        left: 2%;
+        width: 96%;
+        height: 20px;
+        background-color: $color11;
+        border-radius: 0px 0px 12px 12px;
+    }
 
     .content {
         height: 100%;
@@ -127,6 +152,7 @@ body {
         font-weight: 400;
         line-height: 20px;
         color: $color3;
+        cursor: pointer;
     }
 
     &__cell {
